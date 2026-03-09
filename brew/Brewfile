@@ -1,0 +1,90 @@
+
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Modern, maintained replacement for ls
+brew "eza"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Distributed revision control system
+brew "git"
+# Improved top (interactive process viewer)
+brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Mac App Store command-line interface
+brew "mas"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Theme for zsh
+brew "powerlevel10k"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# Feature-rich console based todo list manager
+brew "task"
+# Find and verify credentials
+brew "trufflehog"
+# Terminal spreadsheet multitool for discovering and arranging data
+brew "visidata"
+# Internet file retriever
+brew "wget"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Password Manager
+cask "1password"
+# 1Password command-line interface
+cask "1password-cli"
+# Application uninstaller
+cask "appcleaner"
+# Chromium based browser
+cask "arc"
+# Primary communication for team coordination
+cask "discord"
+cask "font-meslo-lg-nerd-font"
+# GoPanda: Pandanet client for playing Go
+cask "gopanda"
+# Logos: Bible study software.
+cask "logos"
+# Break time reminder app
+cask "lookaway"
+# Gaming
+cask "minecraft"
+# Streaming and Recording
+cask "obs"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Music streaming service
+cask "spotify"
+# thinkorswim: Professional-grade trading platform
+cask "thinkorswim"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
+# Experimental/Alpha version of Zen Browser
+cask "zen@twilight"
+# Zoom: Video communication and collaboration
+cask "zoom"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 361285480
+mas "Numbers", id: 361304891
+mas "Pages", id: 361309726
+mas "Slack", id: 803453959
+mas "Super Agent", id: 1568262835
+mas "Usage", id: 1561788435
+mas "WhatsApp", id: 310633997
+mas "Windows App", id: 1295203466
