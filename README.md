@@ -114,7 +114,10 @@ I use custom aliases (defined in `.zshrc`) to keep the system healthy:
 Alias | Description
 -------- | -----------
 `reload` | Refresh shell (`source ~/.zshrc`)
+`z` | Smart `cd` (remembers paths)
 `v` | Open Neovim
+`CTRL+R` | History search in the terminal.
+`find . \| fzf` | Fuzzy finder for files and directories.
 `ls` | Run `eza` with icons and git status
 `brew-sync` | Update, upgrade, and cleanup Homebrew
 `brew upgrade --cask` | This will upgrade apps installed
