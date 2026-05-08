@@ -97,14 +97,26 @@ stow zsh nvim wezterm
 
 I use Virtual Environments to keep the system Python clean:
 
-- **Create**: `python3 -m venv venv`
-- **Activate**: `source venv/bin/activate`
+- **Create**:
+  ```bash
+  python3 -m venv venv
+  ```
+- **Activate**:
+  ```bash
+  source venv/bin/activate
+  ```
   - Add what you want like `pyperclip`, `boto3` by doing
   ```bash
   pip install pachage_name
   ```
-- **Deactivate**: `deactivate`
-- **Cleanup**: `rm -rf venv`
+- **Deactivate**:
+  ```bash
+  deactivate
+  ```
+- **Cleanup**:
+  ```bash
+  rm -rf venv
+  ```
 
 ---
 
@@ -120,7 +132,6 @@ Alias | Description
 `find . \| fzf` | Fuzzy finder for files and directories.
 `ls` | Run `eza` with icons and git status
 `brew-sync` | Update, upgrade, and cleanup Homebrew
-`brew upgrade --cask` | This will upgrade apps installed
 `brew doctor` | Check for Issues: If you're having issues
 
 ### Keeping the Brewfile in Sync
