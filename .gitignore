@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Vim/Neovim
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.*
+
+# Stow
+.stow-local-ignore

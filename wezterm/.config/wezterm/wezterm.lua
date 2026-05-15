@@ -8,7 +8,7 @@ config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 18.0
 config.line_height = 1.1
 
-config.enable_tab_bar = false
+config.hide_tab_bar_if_only_one_tab = true
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.8
 config.macos_window_background_blur = 15
@@ -27,7 +27,6 @@ config.initial_rows = 60
 -- Performance & Cursor
 config.scrollback_lines = 10000
 config.default_cursor_style = "SteadyBar"
-config.cursor_blink_rate = 600
 config.animation_fps = 120
 
 -- ############################################################
@@ -83,5 +82,8 @@ config.keys = {
 	{ key = "]", mods = "CMD", action = wezterm.action.ActivateTabRelative(1) },
 	{ key = "w", mods = "CMD", action = wezterm.action.CloseCurrentPane({ confirm = false }) },
 }
+
+-- Clickable URLs
+config.hyperlink_rules = wezterm.default_hyperlink_rules()
 
 return config

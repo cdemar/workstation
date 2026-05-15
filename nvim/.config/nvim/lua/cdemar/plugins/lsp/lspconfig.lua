@@ -4,7 +4,7 @@ return {
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
-		{ "folke/neodev.nvim", opts = {} },
+		{ "folke/lazydev.nvim", ft = "lua", opts = {} },
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
@@ -106,6 +106,19 @@ return {
 							completion = { callSnippet = "Replace" },
 						},
 					},
+				})
+			end,
+
+			-- eslint LSP with auto-fix on save
+			["eslint"] = function()
+				lspconfig["eslint"].setup({
+					capabilities = capabilities,
+					on_attach = function(_, bufnr)
+						vim.api.nvim_create_autocmd("BufWritePre", {
+							buffer = bufnr,
+							command = "EslintFixAll",
+						})
+					end,
 				})
 			end,
 		})

@@ -6,16 +6,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# --- 3. LOAD THE THEME (Must be before Oh My Zsh) ---
+# --- 3. LOAD THE THEME ---
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
-# --- 4. OH MY ZSH CORE ---
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="" # Leave blank because we loaded p10k above manually
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
-
-# --- 5. LOAD REMAINING HOMEBREW TOOLS ---
+# --- 4. LOAD HOMEBREW TOOLS ---
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -29,4 +23,16 @@ export EDITOR='nvim'
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias v="nvim"
 alias reload="source ~/.zshrc"
-alias brew-sync="brew update && brew upgrade && brew upgrade --cask && brew cleanup --prune=all && brew autoremove"
+
+
+# --- 7. HISTORY ---
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+setopt HIST_IGNORE_DUPS HIST_IGNORE_ALL_DUPS HIST_FIND_NO_DUPS SHARE_HISTORY
+
+# --- 8. NODE (fnm) ---
+eval "$(fnm env --use-on-cd)"
+
+# --- 9. PYTHON ---
+export PATH="$HOME/Library/Python/3.14/bin:$PATH"

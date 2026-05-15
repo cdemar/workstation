@@ -1,17 +1,25 @@
-# Bourne-Again SHell, a UNIX command interpreter
-brew "bash"
-# Remove large files or passwords from Git history like git-filter-branch
-brew "bfg"
+# Better cat with syntax highlighting
+brew "bat"
+# Better git diff viewer (syntax-highlighted)
+brew "delta"
 # Modern, maintained replacement for ls
 brew "eza"
+# Fast file finder (used by telescope)
+brew "fd"
+# Fast Node version manager
+brew "fnm"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub CLI
+brew "gh"
 # Distributed revision control system
 brew "git"
 # Improved top (interactive process viewer)
 brew "htop"
-# User-friendly cURL replacement (command-line HTTP client)
-brew "httpie"
+# JSON CLI processor
+brew "jq"
+# Terminal UI for git
+brew "lazygit"
 # Mac App Store command-line interface
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -23,17 +31,11 @@ brew "pandoc"
 # Theme for zsh
 brew "powerlevel10k"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
+brew "python@3.14"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# Feature-rich console based todo list manager
-brew "task"
-# Terminal spreadsheet multitool for discovering and arranging data
-brew "visidata"
 # Internet file retriever
 brew "wget"
 # Shell extension to navigate your filesystem faster
