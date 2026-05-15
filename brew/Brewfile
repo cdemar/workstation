@@ -1,5 +1,7 @@
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Remove large files or passwords from Git history like git-filter-branch
+brew "bfg"
 # Modern, maintained replacement for ls
 brew "eza"
 # Command-line fuzzy finder written in Go
@@ -50,6 +52,8 @@ cask "appcleaner"
 cask "arc"
 # Anthropic's official Claude AI desktop app
 cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # Voice and text chat software
 cask "discord"
 cask "font-meslo-lg-nerd-font"
