@@ -163,10 +163,14 @@ rm -rf venv                 # cleanup
 | Discord, Slack, Zoom, WhatsApp | Communication |
 | OBS | Screen recording / streaming |
 | Spotify | Music |
+| Stats | Menu bar system monitor (CPU, RAM, network) |
+| Ice | Menu bar manager — hide and organize icons |
+| LuLu | Open source outbound firewall |
+| ProtonVPN | VPN with free tier and open source client |
 | Thinkorswim | Trading platform |
 | Logos | Bible study |
 | GoPanda | Go (board game) client |
-| Lookaway | Break reminders |
+| Lookaway | Break reminders (OSS alternative: [Stretchly](https://hovancik.net/stretchly/)) |
 | AppCleaner | App uninstaller |
 | Minecraft | Minecraft |
 

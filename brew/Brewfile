@@ -63,8 +63,12 @@ cask "font-meslo-lg-nerd-font"
 cask "gopanda"
 # Bible study software
 cask "logos"
+# Menu bar manager — hide and organize menu bar icons
+cask "jordanbaird-ice"
 # Break time reminder app
 cask "lookaway"
+# Open source outbound firewall — monitors and blocks app network connections
+cask "lulu"
 # Sandbox construction video game
 cask "minecraft"
 # Open-source software for live streaming and screen recording
@@ -72,9 +76,14 @@ cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Control your tools with a few keystrokes
+# VPN with free tier and open source client
+cask "protonvpn"
+# Launcher and productivity tool
 cask "raycast"
 # Music streaming service
 cask "spotify"
+# Menu bar system monitor (CPU, RAM, network)
+cask "stats"
 # Desktop client for TD Ameritrade trading platform
 cask "thinkorswim"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
@@ -90,6 +99,5 @@ mas "Numbers", id: 361304891
 mas "Pages", id: 361309726
 mas "Slack", id: 803453959
 mas "Super Agent", id: 1568262835
-mas "Usage", id: 1561788435
 mas "WhatsApp", id: 310633997
 mas "Windows App", id: 1295203466
