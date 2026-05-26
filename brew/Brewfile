@@ -1,24 +1,28 @@
-# Better cat with syntax highlighting
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Better git diff viewer (syntax-highlighted)
-brew "delta"
 # Modern, maintained replacement for ls
 brew "eza"
-# Fast file finder (used by telescope)
+# Simple, fast and user-friendly alternative to find
 brew "fd"
-# Fast Node version manager
+# Fast and simple Node.js version manager
 brew "fnm"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# GitHub CLI
+# GitHub command-line tool
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Improved top (interactive process viewer)
 brew "htop"
-# JSON CLI processor
+# Lightweight and flexible command-line JSON processor
 brew "jq"
-# Terminal UI for git
+# Simple terminal UI for git commands
 brew "lazygit"
 # Mac App Store command-line interface
 brew "mas"
@@ -30,8 +34,6 @@ brew "node"
 brew "pandoc"
 # Theme for zsh
 brew "powerlevel10k"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -61,13 +63,13 @@ cask "discord"
 cask "font-meslo-lg-nerd-font"
 # Pandanet client
 cask "gopanda"
+# Menu bar manager
+cask "jordanbaird-ice"
 # Bible study software
 cask "logos"
-# Menu bar manager — hide and organize menu bar icons
-cask "jordanbaird-ice"
 # Break time reminder app
 cask "lookaway"
-# Open source outbound firewall — monitors and blocks app network connections
+# Open-source firewall to block unknown outgoing connections
 cask "lulu"
 # Sandbox construction video game
 cask "minecraft"
@@ -75,14 +77,13 @@ cask "minecraft"
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Control your tools with a few keystrokes
-# VPN with free tier and open source client
+# VPN client focusing on security
 cask "protonvpn"
-# Launcher and productivity tool
+# Control your tools with a few keystrokes
 cask "raycast"
 # Music streaming service
 cask "spotify"
-# Menu bar system monitor (CPU, RAM, network)
+# System monitor for the menu bar
 cask "stats"
 # Desktop client for TD Ameritrade trading platform
 cask "thinkorswim"
@@ -92,7 +93,6 @@ cask "wezterm"
 cask "zen@twilight"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 361285480
 mas "Numbers", id: 361304891
