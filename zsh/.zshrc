@@ -35,3 +35,8 @@ eval "$(fnm env --use-on-cd)"
 
 # --- 8. PYTHON ---
 export PATH="$HOME/Library/Python/3.14/bin:$PATH"
+
+# --- 9. AWS CLI ---
+export AWS_ACCESS_KEY_ID=$(op read "op://Private/AWS Access Key/access key id")
+export AWS_SECRET_ACCESS_KEY=$(op read "op://Private/AWS Access Key/secret access key")
+export AWS_DEFAULT_REGION="us-west-2"
