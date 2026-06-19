@@ -12,7 +12,7 @@ sync:
 
 # Update brew + nvim plugins
 update:
-	brew update && brew upgrade && brew upgrade --cask && brew cleanup --prune=all && brew autoremove
+	brew update && brew upgrade && brew upgrade --cask --greedy && brew cleanup --prune=all && brew autoremove
 	nvim --headless "+Lazy! sync" +qa
 
 # Show what's outdated without changing anything

@@ -37,6 +37,10 @@ eval "$(fnm env --use-on-cd)"
 export PATH="$HOME/Library/Python/3.14/bin:$PATH"
 
 # --- 9. AWS CLI ---
-export AWS_ACCESS_KEY_ID=$(op read "op://Private/AWS Access Key/access key id")
-export AWS_SECRET_ACCESS_KEY=$(op read "op://Private/AWS Access Key/secret access key")
+# Credentials are read from 1Password at shell start.
+# If 1Password isn't signed in, the variables are silently skipped —
+# run `eval $(op signin)` then `source ~/.zshrc` to load them.
+export AWS_ACCESS_KEY_ID=$(op read "op://Private/AWS Access Key/access key id" 2>/dev/null)
+export AWS_SECRET_ACCESS_KEY=$(op read "op://Private/AWS Access Key/secret access key" 2>/dev/null)
 export AWS_DEFAULT_REGION="us-west-2"
+export PATH="$HOME/work/Personal_Proj/scripts:$PATH"
